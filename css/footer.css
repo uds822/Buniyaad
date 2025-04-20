@@ -1,0 +1,241 @@
+/* Footer Styles with unique BF prefix */
+.bf-footer-main {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 40px 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bf-footer-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bf-footer-grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.bf-footer-grid {
+  padding: 0 15px;
+}
+
+.bf-footer-heading {
+  color: #f1c40f;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.bf-footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bf-footer-nav li {
+  margin-bottom: 12px;
+}
+
+.bf-footer-nav a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.bf-footer-nav a:hover {
+  color: #f1c40f;
+  padding-left: 5px;
+}
+
+.bf-contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bf-contact-details li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.bf-icon {
+  margin-right: 10px;
+  color: #f1c40f;
+  min-width: 20px;
+  text-align: center;
+}
+
+.bf-contact-details a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bf-contact-details a:hover {
+  color: #f1c40f;
+}
+
+.bf-timing {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.bf-timing li {
+  margin-bottom: 10px;
+  color: #bdc3c7;
+}
+
+/* Brochure Button */
+.bf-btn-brochure {
+  display: inline-block;
+  background: #f1c40f;
+  color: #2c3e50;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.bf-btn-brochure:hover {
+  background: #f39c12;
+  transform: translateY(-2px);
+}
+
+/* Footer Bottom Section */
+.bf-footer-bottom {
+  background: #1a252f;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bf-social-links {
+  margin-bottom: 15px;
+}
+
+.bf-social-icon {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 36px;
+  transition: all 0.3s ease;
+}
+
+.bf-social-icon:hover {
+  background: #f1c40f;
+  color: #2c3e50;
+  transform: translateY(-3px);
+}
+
+.bf-back-to-top {
+  margin-bottom: 15px;
+}
+
+.bf-back-to-top a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bf-back-to-top a:hover {
+  color: #f1c40f;
+}
+
+.footer-copyright {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.footer-copyright a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-copyright a:hover {
+  color: #f1c40f;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .bf-footer-grids {
+      grid-template-columns: 1fr;
+      gap: 30px;
+  }
+  
+  .bf-footer-grid {
+      padding: 0;
+  }
+  
+  .bf-footer-heading {
+      margin-bottom: 15px;
+  }
+}
+
+/* Icons */
+.bf-icon-location:before {
+  content: "📍";
+}
+
+.bf-icon-phone:before,
+.bf-icon-phone-alt:before {
+  content: "📞";
+}
+
+.bf-icon-email:before {
+  content: "✉️";
+}
+
+.bf-icon-up:before {
+  content: "↑";
+}
+
+/* Social Icons */
+.bf-icon-fb:before {
+  content: "f";
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.bf-icon-tw:before {
+  content: "t";
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.bf-icon-li:before {
+  content: "in";
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.bf-icon-ig:before {
+  content: "ig";
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.bf-icon-yt:before {
+  content: "yt";
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Offered at Buniyaad</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-poppins">
+   <!-- Navbar -->
+<!-- Navbar -->
+ <!-- Navbar -->
+ <div class="navbar">
+  <div class="logo">
+      <img src="./images/logo.png" alt="Buniyaad-The Foundation Logo" class="logo-img">
+      <div class="brand-container">
+          <span class="brand-name">Buniyaad</span>
+          <span class="brand-superscript">The Foundation</span>
+      </div>
+  </div>
+  
+  <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="course.html">Courses</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+  </div>
+  
+  <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+</div>
+
+  <!-- Header -->
+  <section class="bg-blue-600 text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-4 animate-fade-in-down">Join Our Coaching Program</h1>
+      <p class="text-lg mb-6 animate-fade-in-up">Start your journey to academic success with our expert guidance.</p>
+      <a href="#admission-form" class="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded-full font-semibold transition duration-300">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-700">How to Apply</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl text-center shadow hover:shadow-lg transition duration-300 border-t-4 border-blue-500">
+          <h3 class="text-xl font-semibold mb-2">Fill Form</h3>
+          <p>Complete our simple application form.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl text-center shadow hover:shadow-lg transition duration-300 border-t-4 border-blue-500">
+          <h3 class="text-xl font-semibold mb-2">Get Call</h3>
+          <p>Our team will contact you for details.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl text-center shadow hover:shadow-lg transition duration-300 border-t-4 border-blue-500">
+          <h3 class="text-xl font-semibold mb-2">Pay Fees</h3>
+          <p>Complete the payment process securely.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl text-center shadow hover:shadow-lg transition duration-300 border-t-4 border-blue-500">
+          <h3 class="text-xl font-semibold mb-2">Start Learning</h3>
+          <p>Begin your classes with our top mentors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Form -->
+  <section id="admission-form" class="py-20 bg-gradient-to-br from-blue-100 to-purple-100">
+    <div class="max-w-3xl mx-auto px-6 bg-white p-10 rounded-2xl shadow-lg">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2">Admission Form</h2>
+        <p class="text-gray-600">Fill your details to get started</p>
+      </div>
+      <form class="space-y-6">
+        <div>
+          <label class="block font-semibold mb-1">Full Name</label>
+          <input type="text" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Phone Number</label>
+          <input type="tel" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Email</label>
+          <input type="email" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Class/Grade</label>
+          <input type="text" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Course Interested In</label>
+          <select class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            <option value="">Select course</option>
+            <option>JEE Preparation</option>
+            <option>NEET Preparation</option>
+            <option>Board Exams</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Optional Footer -->
+  <!-- Footer -->
+<div class="bf-footer-main">
+  <div class="bf-footer-container">
+    <div class="bf-footer-grids">
+      <div class="bf-footer-grid">
+        <h4 class="bf-footer-heading">Quick Links</h4>
+        <ul class="bf-footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="bf-footer-grid">
+        <h4 class="bf-footer-heading">Resources</h4>
+        <ul class="bf-footer-nav">
+          <li><a href="https://drive.google.com/uc?export=download&id=your-brochure-link">Download Brochure</a></li>
+          <li><a href="syllabus.html">Syllabus</a></li>
+          <li><a href="sample-papers.html">Sample Papers</a></li>
+          <li><a href="study-materials.html">Study Materials</a></li>
+          <li><a href="blog.html">Blog & Tips</a></li>
+        </ul>
+      </div>
+      <div class="bf-footer-grid">
+        <h4 class="bf-footer-heading">Contact Info</h4>
+        <ul class="bf-contact-details">
+          <li><i class="bf-icon bf-icon-location"></i> Janata Cinema Campus, Gopalganj, Bihar</li>
+          <li><i class="bf-icon bf-icon-phone"></i> +91-7488329365</li>
+          <li><i class="bf-icon bf-icon-phone-alt"></i> +91-9643557068</li>
+          <li><i class="bf-icon bf-icon-email"></i> <a href="mailto:contact@thebuniyaad.com">contact@thebuniyaad.com</a></li>
+        </ul>
+      </div>
+      <div class="bf-footer-grid">
+        <h4 class="bf-footer-heading">Opening Hours</h4>
+        <ul class="bf-timing">
+          <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+          <li>Saturday: 8:00 AM - 2:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+        <div class="bf-brochure-btn">
+          <a href="https://drive.google.com/uc?export=download&id=your-brochure-link" class="bf-btn-brochure">Download Brochure</a>
+        </div>
+      </div>
+      <div class="bf-clearfix"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Copyright & Social -->
+<div class="bf-footer-bottom">
+  <div class="bf-footer-inner">
+    <div class="bf-social-links">
+      <a href="https://www.facebook.com/buniyaad.foundation" target='_blank' aria-label="Facebook">
+        <i class="bf-social-icon bf-icon-fb"></i>
+      </a>
+      <a href="https://twitter.com/BuniyaadFoundation" target="_blank" aria-label="Twitter">
+        <i class="bf-social-icon bf-icon-tw"></i>
+      </a>
+      <a href="https://www.instagram.com/buniyaadfoundation" target="_blank" aria-label="Instagram">
+        <i class="bf-social-icon bf-icon-ig"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/buniyaad-foundation" target="_blank" aria-label="LinkedIn">
+        <i class="bf-social-icon bf-icon-li"></i>
+      </a>
+      <a href="https://www.youtube.com/c/BuniyaadFoundation" target="_blank" aria-label="YouTube">
+        <i class="bf-social-icon bf-icon-yt"></i>
+      </a>
+    </div>
+    <div class="bf-back-to-top">
+      <a href="#top" aria-label="Back to top">
+        <i class="bf-icon bf-icon-up"></i>TOP
+      </a>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Buniyaad - The Foundation. All Rights Reserved. | Designed by <a href="https://www.linkedin.com/in/rajan-kumar-sharma-77336a221/" target="_blank">Rajan Kumar Sharma</a></p>
+    </div>
+  </div>
+</div>
+<script src="js/slider.js"></script>
+<script src="js/index.js"></script>
+<script src="js/nav.js"></script>
+
+</body>
+</html>

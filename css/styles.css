@@ -1,0 +1,379 @@
+/* styles.css */
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 30%;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Slider Styles */
+.container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Adjust height based on content */
+  overflow: hidden;
+  display: flex; /* Center align slider */
+  justify-content: center; /* Center horizontally */
+}
+
+.slider-box {
+  background: rgba(231, 229, 229, 0.9); /* White background with slight transparency */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(67, 66, 66, 0.58); /* Shadow for depth */
+  padding: 20px; /* Inner padding */
+  width: 90%; /* Adjust width as needed */
+  max-width: 100%; /* Maximum width for larger screens */
+  margin-top: 10px;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  max-height: 500px; /* Adjust as needed */
+  overflow: hidden;
+  display: none;
+}
+
+.slideshow-container {
+  width: 100%;
+  max-height: 500px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  max-height: 500px; /* Adjust as needed */
+  object-fit: cover; /* Ensures aspect ratio is maintained */
+}
+
+
+
+
+/* Navigation Buttons */
+/* Navigation Buttons */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 15px; /* Increased padding for better visibility */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5em;
+  color: #333; /* Added color for the arrow icons */
+  z-index: 2; /* Ensure buttons appear above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow for better visibility */
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+body, html {
+  margin: 0px;
+}
+
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.dot {
+  height: 15px; /* Decreased size of the dot */
+  width: 15px; /* Decreased size of the dot */
+  border-radius: 50%;
+  margin: 0 5px; /* Adjust spacing between dots */
+  box-shadow: 0px 1px 2px 1px #000;
+  background: #fff;
+  transition: all 0.4s ease;
+}
+
+.active {
+  background-color: blue;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Section Styles */
+.section {
+  background-color: #fff;
+  padding: 60px 40px;
+  margin: 30px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.section:hover {
+  transform: scale(1.02);
+}
+
+#about {
+  background-color: #e0f7fa;
+}
+
+.testimonial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #222;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #4a89dc;
+  margin: 15px auto 0;
+}
+
+/* Main Testimonial */
+.main-testimonial {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.testimonial-image {
+  flex: 0 0 300px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  flex: 1;
+}
+
+.testimonial-text p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.student-info {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.student-info strong {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.student-info span {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Thumbnails */
+.testimonial-thumbnails {
+  position: relative;
+  padding: 0 50px;
+}
+
+.thumbnails-container {
+  display: flex;
+  gap:5px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding-bottom: 20px;
+}
+
+.thumbnails-container::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbnail {
+  flex: 0 0 350px;
+  background: rgb(193, 244, 244);
+  border-radius: 8px;
+  padding: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail.active {
+  border-color: #4a89dc;
+}
+
+.thumbnail p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.thumbnail .student-info {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Controls */
+.testimonial-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.testimonial-controls button {
+  background: #4a89dc;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-controls button:hover {
+  background: #3a6cb0;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .testimonial-content {
+    flex-direction: column;
+  }
+  
+  .testimonial-image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .thumbnail {
+    flex: 0 0 280px;
+  }
+  
+  .testimonial-thumbnails {
+    padding: 0 20px;
+  }
+}

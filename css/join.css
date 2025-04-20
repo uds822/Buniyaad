@@ -1,0 +1,163 @@
+/* General Container */
+.container2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Titles */
+h2.tittle {
+  font-size: 32px;
+  text-align: center;
+  color: #2d4f8b; /* Dark blue color matching the title */
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Subheading Titles */
+h4 {
+  font-size: 22px;
+  color: #d94d4d; /* Light red/pinkish color matching the subheadings */
+  margin-bottom: 15px;
+}
+
+/* Paragraph Text */
+/* p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  text-align: justify;
+  margin-bottom: 20px;
+} */
+
+strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #2d4f8b; /* Dark blue button background */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #1f3870; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+.download {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Course Grids Layout */
+.course-grids .col-md-6, .course-grids .col-md-3 {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .course-grids .col-md-6 {
+      width: 50%;
+      float: left;
+  }
+
+  .course-grids .col-md-3 {
+      width: 25%;
+      float: left;
+  }
+}
+
+/* Registration Section Styling */
+.registration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensures even spacing between grid items */
+  gap: 20px; /* Adjust gap between boxes */
+  padding: 0 20px; /* Padding to ensure the boxes don't touch the sides of the webpage */
+}
+
+.registration .ser-grid {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Make all boxes flexible in width */
+  min-width: 250px; /* Minimum box width to ensure consistency */
+  max-width: 23%; /* Ensure the boxes take up a maximum width of 23% for 4 items in a row */
+  box-sizing: border-box; /* Include padding and borders in element’s total width/height */
+  margin-bottom: 30px;
+}
+
+.registration .ser-grid h4 {
+  font-size: 18px;
+  color: #2d4f8b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.registration .ser-grid p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px; /* Add some space between the text and the button */
+}
+
+/* Button styling */
+.registration .ser-grid .btn-primary {
+  width: 100%; /* Full width for buttons to align properly */
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .registration {
+      justify-content: space-around;
+      padding: 0 10px; /* Reduce padding for smaller screens */
+  }
+
+  .registration .ser-grid {
+      max-width: 45%; /* 2 boxes per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .registration {
+      padding: 0 10px; /* Adjust padding for mobile */
+  }
+
+  .registration .ser-grid {
+      max-width: 100%; /* Full-width boxes on smaller screens */
+      margin-bottom: 20px;
+  }
+
+  .course-grids .col-md-6, .course-grids .col-md-3 {
+      width: 100%;
+  }
+}

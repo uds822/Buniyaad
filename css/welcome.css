@@ -1,0 +1,29 @@
+.welcome-box {
+  background-color: #f9f9f9; /* Light background color */
+  border: 2px solid #48095a; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding for inner content */
+  max-width: 90%; /* Max width for the box */
+  margin: 20px auto; /* Centering the box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  animation: slideIn 0.5s ease; /* Animation on appearance */
+}
+
+.welcome-box p {
+  color: #333; /* Text color */
+  font-size: 1.1em; /* Font size */
+  line-height: 1.6em; /* Line height for better readability */
+  margin: 0; /* Remove default margin */
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+  from {
+      opacity: 0; /* Start transparent */
+      transform: translateY(-20px); /* Start slightly above */
+  }
+  to {
+      opacity: 1; /* End fully visible */
+      transform: translateY(0); /* End in place */
+  }
+}

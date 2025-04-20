@@ -1,0 +1,53 @@
+/* Centering the title and making it bold */
+.tittle {
+  text-align: center; /* Center the title */
+   /* Make the title bold */
+  font-size: 2em;     /* Optional: Increase font size */
+  margin-bottom: 30px; /* Space below the title */
+}
+
+/* Styling the student grids */
+.student-grids {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Adjusting the student grid items */
+.student-grid {
+  flex: 1; /* Allow grids to grow */
+  padding: 20px; /* Space around content */
+  margin-left: 90px;
+}
+
+/* Ensuring the image is responsive and aligned to the right */
+.student-grid img {
+  max-width: 70%; /* Ensure the image is responsive */
+  height: auto;    /* Maintain aspect ratio */
+  display: block;  /* Ensure it takes full width */
+  margin-left: auto; /* Align image to the right */
+}
+
+/* Optional: Add some margin to the unordered list */
+.grid-part {
+  margin-top: 20px; /* Space above the list */
+}
+/* Button Styling */
+.btn-primary {
+  background-color: #007bff; /* Set button background color */
+  color: white;              /* Set text color */
+  padding: 10px 20px;       /* Add padding */
+  border: none;             /* Remove border */
+  border-radius: 5px;      /* Rounded corners */
+  font-size: 16px;          /* Font size */
+  cursor: pointer;          /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+  background-color: #0056b3; /* Darken background on hover */
+}
+
+/*About section
+
+ 
